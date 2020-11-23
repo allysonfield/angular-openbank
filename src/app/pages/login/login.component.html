@@ -1,0 +1,55 @@
+
+<div style="padding-top: 20px;" class=" content">
+  <div class="row justify-content-md-center ">
+    <div class=" col-lg-4 col-xl-4  center">
+      <div class=" card">
+        <!-- <div class=" card-header"><h5 class=" title">Edit Profile</h5></div> -->
+
+        <div class=" card-body">
+
+            <div class=" row justify-content-md-center">
+              <img style=" width: 20rem; align-self: center;" src="../../../assets/img/logo.png" alt="">
+              <div class=" col-md-8">
+                <div class=" form-group">
+                  <label> Email </label>
+                  <input
+                    class=" form-control"
+                    [(ngModel)]="email"
+                    placeholder="email"
+                    type="text"
+                    name="email"
+                  />
+
+                </div>
+              </div>
+
+              <div class=" col-md-8 ">
+                <div class=" form-group">
+                  <label for="exampleInputEmail1"> Senha </label>
+                  <input
+                    class=" form-control"
+                    placeholder="Digite a senha"
+                    [(ngModel)]="password"
+                    type="password"
+                  />
+                </div>
+              </div>
+            </div>
+
+
+
+          <div style="text-align: center;" class=" card-footer">
+            <button class=" btn btn-fill btn-success" (click)="login()" type="submit">Entrar</button>
+
+          </div>
+          <div style="text-align: center;" class=" card-footer">
+
+            <button (click)="goRegister()" class=" btn btn-fill btn-info" type="submit">Registre-se</button>
+          </div>
+        </div>
+
+      </div>
+
+
+  </div>
+</div>

@@ -1,0 +1,30 @@
+
+<div class=" content">
+  <div class=" row justify-content-md-center ">
+    <div class=" col-md-8">
+      <div class=" card">
+        <div class=" card-header"><h5 class=" title">Depósito</h5></div>
+        <div class=" card-body">
+
+
+            <div class=" row">
+              <div class="col-md-2 pr-md-1">
+                <div class=" form-group">
+                  <label> Valor </label>
+                  <input
+                    class=" form-control"
+                    type="number"
+                    [(ngModel)]="value"
+                  />
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class=" card-footer">
+          <button (click)="deposit()" class=" btn btn-fill btn-danger" type="submit">Depositar</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

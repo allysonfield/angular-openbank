@@ -1,0 +1,60 @@
+
+<div class=" content">
+  <div class=" row">
+    <div class=" col-lg-12 col-md-12">
+      <div class=" card card-tasks">
+        <div class=" card-header">
+          <h6 class=" title d-inline">Movimentação</h6>
+          <!-- <p class=" card-category d-inline">today</p> -->
+
+        <div class=" card-body">
+          <div class=" table-full-width table-responsive">
+            <table class=" table">
+              <tbody>
+                <tr *ngFor="let data of datasets">
+                  <td>
+                    <p *ngIf="data._id.type === 'transfer-send'" class=" title">Transferência feita</p>
+                    <p *ngIf="data._id.type === 'transfer-receive'" class=" title">Transferência recebida</p>
+                    <p *ngIf="data._id.type === 'deposit'" class=" title">Depósito</p>
+                    <p >
+                      {{data._id.value.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL', minimumFractionDigits: 2})}}
+                    </p>
+                  </td>
+
+                  <td>
+                    <!-- <p class=" title">{{data._id.day}}/{{data._id.month}}/{{data._id.year}}</p> -->
+                    <p class=" title">Em</p>
+                    <p class=" title">{{data._id.date}}</p>
+
+                  </td>
+
+                  <td *ngFor="let user of data.user">
+
+                    <div style="display: flex;" *ngIf="data._id.type === 'transfer-send'">
+                      <p style="margin-right: 15px;" >
+                        para
+                      </p>
+                      <span style="color: aliceblue;" class="title">{{user.name}}</span>
+                    </div>
+                    <div style="display: flex;"  *ngIf="data._id.type === 'transfer-receive'">
+                      <p style="margin-right: 15px;" >
+                        de
+                       </p>
+                       <span style="color: aliceblue;" class="title">{{user.name}}</span>
+                    </div>
+                  </td>
+                  <td>
+
+                  </td>
+
+                </tr>
+
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

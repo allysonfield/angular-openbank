@@ -1,0 +1,90 @@
+
+<div class=" content">
+  <div class=" row justify-content-md-center ">
+    <div class=" col-md-8">
+      <div class=" card">
+        <div class=" card-header"><h5 class=" title">Transferência</h5></div>
+        <div class=" card-body">
+
+            <div class=" row">
+              <div class=" col-md-5 pr-md-1">
+                <div class=" form-group">
+                  <label> CPF </label>
+                  <input
+                    class=" form-control"
+                    placeholder="digite o cpf"
+                    mask="000.000.000-00||00.000.000/0000-00"
+                    [(ngModel)]="CPF"
+                    type="text"
+                    name="cpf"
+                  />
+                </div>
+
+              </div>
+              <div class=" col-md-3 px-md-1">
+                <div class=" form-group">
+                  <label> Conta </label>
+                  <input
+                    class=" form-control"
+                    placeholder="digite a conta"
+                    type="text"
+                    [(ngModel)]="account"
+                  />
+                </div>
+              </div>
+              <div class=" col-md-4 pl-md-1">
+                <div class=" form-group">
+                  <label for="exampleInputEmail1"> Agência </label>
+                  <input
+                    class=" form-control"
+                    placeholder="digite a agência"
+                    type="text"
+                    [(ngModel)]="agency"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class=" row">
+              <div class=" col-md-6 pr-md-1">
+                <div class=" form-group">
+                  <label> Nome </label>
+                  <input
+                    class=" form-control"
+                    placeholder="digite o nome"
+                    type="text"
+                  />
+                </div>
+              </div>
+              <div class=" col-md-6 pl-md-1">
+                <div class=" form-group">
+                  <label> Banco </label>
+                  <input
+                    class=" form-control"
+                    disabled=""
+                    type="text"
+                    value="Open Bank"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class=" row">
+              <div class="col-md-2 pr-md-1">
+                <div class=" form-group">
+                  <label> Valor </label>
+                  <input
+                    class=" form-control"
+                    type="number"
+                    [(ngModel)]="value"
+                  />
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class=" card-footer">
+          <button (click)="transfer()" class=" btn btn-fill btn-danger" type="submit">Transferir</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
