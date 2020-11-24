@@ -24,30 +24,40 @@ We are very excited to share this dashboard with you and we look forward to hear
 
 ## Table of Contents
 
-* [Versions](#versions)
+<!-- * [Versions](#versions) -->
 * [Demo](#demo)
-* [Quick Start](#quick-start)
-* [Documentation](#documentation)
+* [Requires API](#requires-api)
+* [Languages and Frameworks ​​Used](#languages-and-frameworks-used)
 * [File Structure](#file-structure)
 * [Browser Support](#browser-support)
-* [Resources](#resources)
+<!-- * [Resources](#resources) -->
 * [Reporting Issues](#reporting-issues)
 * [Technical Support or Questions](#technical-support-or-questions)
 * [Licensing](#licensing)
 * [Useful Links](#useful-links)
 
+## Languages and Frameworks ​​Used 
 
-## Versions
+<!-- * [Versions](#versions) -->
+* [Javascript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
+* [Typescript](https://www.typescriptlang.org/docs/)
+<!-- * [Documentation](#documentation) -->
+<!-- * [NoSql](#file-structure) -->
+* [HTML](https://devdocs.io/html/)
+<!-- * [Resources](#resources) -->
+* [CSS](https://devdocs.io/css/)
+* [SASS](https://sass-lang.com/documentation)
+* [Angular](https://angular.io/docs)
+
+
+<!-- ## Versions
 
 [<img src="https://s3.amazonaws.com/creativetim_bucket/github/html.png" width="60" height="60" />](https://www.creative-tim.com/product/black-dashboard?ref=bda-readme)
 [<img src="https://s3.amazonaws.com/creativetim_bucket/github/angular.png" width="60" height="60" />](https://www.creative-tim.com/product/black-dashboard-angular?ref=bda-readme)
 [<img src="https://s3.amazonaws.com/creativetim_bucket/github/react.svg" width="60" height="60" />](https://www.creative-tim.com/product/black-dashboard-react?ref=bda-readme)
-[<img src="https://s3.amazonaws.com/creativetim_bucket/github/vuejs.png" width="60" height="60" />](https://www.creative-tim.com/product/vue-black-dashboard?ref=bda-readme)
+[<img src="https://s3.amazonaws.com/creativetim_bucket/github/vuejs.png" width="60" height="60" />](https://www.creative-tim.com/product/vue-black-dashboard?ref=bda-readme) -->
 
 
-| HTML | Angular | React | Vue |
-| --- | --- | --- | --- |
-| [![Black Dashboard HTML](https://s3.amazonaws.com/creativetim_bucket/products/93/thumb/opt_bd_thumbnail.jpg)](https://www.creative-tim.com/product/black-dashboard) | [![Black Dashboard Angular](https://s3.amazonaws.com/creativetim_bucket/products/169/thumb/opt_bd_angular_thumbnail.jpg)](https://www.creative-tim.com/product/black-dashboard-angular) | [![Black Dashboard React](https://s3.amazonaws.com/creativetim_bucket/products/136/thumb/opt_bd_react.jpg)](https://www.creative-tim.com/product/black-dashboard-react) | [![Vue Black Dashboard](https://s3.amazonaws.com/creativetim_bucket/products/99/thumb/opt_bd_vue_thumbnail.jpg)](https://www.creative-tim.com/product/vue-black-dashboard) |
 
 ## Demo
 
@@ -197,20 +207,20 @@ At present, we officially aim to support the last two versions of the following 
 <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/chrome.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/firefox.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/edge.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/safari.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/opera.png" width="64" height="64">
 
 
-## Resources
+<!-- ## Resources
 - Demo: https://demos.creative-tim.com/black-dashboard-angular/#/dashboard?ref=bda-readme
 - Download Page: https://www.creative-tim.com/product/black-dashboard-angular?ref=bda-readme
 - Documentation: https://demos.creative-tim.com/black-dashboard-angular/#/documentation/tutorial?ref=bda-readme
 - License Agreement: https://www.creative-tim.com/license?ref=bda-readme
 - Support: https://www.creative-tim.com/contact-us?ref=bda-readme
-- Issues: [Github Issues Page](https://github.com/creativetimofficial/black-dashboard-angular/issues?ref=bda-readme)
+- Issues: [Github Issues Page](https://github.com/creativetimofficial/black-dashboard-angular/issues?ref=bda-readme) -->
 
-## Reporting Issues
+<!-- ## Reporting Issues
 We use GitHub Issues as the official bug tracker for the black Dashboard Angular. Here are some advices for our users that want to report an issue:
 
 1. Make sure that you are using the latest version of the black Dashboard Angular. Check the CHANGELOG from your dashboard on our [website](https://www.creative-tim.com/).
 2. Providing us reproducible steps for the issue will shorten the time it takes for it to be fixed.
-3. Some issues may be browser specific, so specifying in what browser you encountered the issue might help.
+3. Some issues may be browser specific, so specifying in what browser you encountered the issue might help. -->
 
 ## Technical Support or Questions
 
