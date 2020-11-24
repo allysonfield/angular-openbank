@@ -51,18 +51,18 @@ We are very excited to share this dashboard with you and we look forward to hear
 
 ## Demo
 
-| Dashboard | User Profile | Tables | RTL | Notification |
+| Dashboard | Signin | Bank Statement | Deposit | Register |
 | --- | --- | --- | --- | --- |
-| [![Start page](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/black-dashboard-angular/dashboard.png?raw=true)](https://demos.creative-tim.com/black-dashboard-angular/#/dashboard?ref=bda-readme) | [![User profile page](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/black-dashboard-angular/user.png?raw=true)](https://demos.creative-tim.com/black-dashboard-angular/#/user?ref=bda-readme) | [![Tables page ](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/black-dashboard-angular/tables.png?raw=true)](https://demos.creative-tim.com/black-dashboard-angular/#/tables?ref=bda-readme) | [![RTL Page](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/black-dashboard-angular/rtl.png?raw=true)](https://demos.creative-tim.com/black-dashboard-angular/#/maps?ref=bda-readme) | [![Notification page](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/black-dashboard-angular/notifications.png?raw=true)](https://demos.creative-tim.com/black-dashboard-angular/#/notifications?ref=bda-readme)
+| [![Start page](https://raw.githubusercontent.com/allysonfield/public-assets/master/gifs/20201124_160303.gif?raw=true)](http://localhost:4200/black-dashboard-angular/#/dashboard?ref=bda-readme) | [![Signin page](://raw.githubusercontent.com/allysonfield/public-assets/master/gifs/20201124_160303.gif?raw=true)](http://localhost:4200/black-dashboard-angular/#/login?ref=bda-readme) | [![Bank Statement page ](https://raw.githubusercontent.com/allysonfield/public-assets/master/gifs/20201124_160303.gif?raw=true)](http://localhost:4200/black-dashboard-angular/#/tables?ref=bda-readme) | [![Deposit Page](https://raw.githubusercontent.com/allysonfield/public-assets/master/gifs/20201124_160303.gif?raw=true)](http://localhost:4200/black-dashboard-angular/#/deposit?ref=bda-readme) | [![Register page](https://raw.githubusercontent.com/allysonfield/public-assets/master/gifs/20201124_160303.gif?raw=true)](http://localhost:4200/black-dashboard-angular/#/register?ref=bda-readme)
 
 [View More](https://demos.creative-tim.com/black-dashboard-angular/#/dashboard?ref=bda-readme).
 
 
-## Quick start
+## Requires API
 
-Quick start options:
+Server project:
 
-- [Download from Creative Tim](https://www.creative-tim.com/product/black-dashboard-angular?ref=bda-readme).
+- [API repository](https://github.com/allysonfield/openbank-server?ref=bda-readme).
 
 ## Terminal Commands
 
@@ -71,7 +71,7 @@ Quick start options:
 3. Go to your file project
 4. Run in terminal: ```npm install -g @angular/cli```
 5. Then: ```npm install```
-6. And: ```ng serve```
+6. And: ```ng serve``` or ```npx ng serve```
 7. Navigate to: [http://localhost:4200/](http://localhost:4200/)
 
 ## File Structure
@@ -87,7 +87,6 @@ black-dashboard-angular
 ├── README.md
 ├── angular.json
 ├── e2e
-├── package-lock.json
 ├── package.json
 ├── src
 │   ├── app
@@ -136,24 +135,31 @@ black-dashboard-angular
 │   │       ├── icons
 │   │       │   ├── icons.component.html
 │   │       │   └── icons.component.ts
-│   │       ├── map
-│   │       │   ├── map.component.html
-│   │       │   └── map.component.ts
-│   │       ├── notifications
-│   │       │   ├── notifications.component.html
-│   │       │   └── notifications.component.ts
+│   │       ├── deposit
+│   │       │   ├── deposit.component.html
+│   │       │   └── deposit.component.ts
+│   │       ├── login
+│   │       │   ├── login.component.html
+│   │       │   └── login.component.ts
+│   │       ├── register
+│   │       │   ├── register.component.html
+│   │       │   └── register.component.ts
 │   │       ├── rtl
 │   │       │   ├── rtl.component.html
 │   │       │   └── rtl.component.ts
+│   │       ├── providers
+│   │       │   ├── api.service.ts
+│   │       │   ├── authenticate.service.ts
+│   │       │   └── routes.service.ts
 │   │       ├── tables
 │   │       │   ├── tables.component.html
 │   │       │   └── tables.component.ts
-│   │       ├── typography
-│   │       │   ├── typography.component.html
-│   │       │   └── typography.component.ts
-│   │       └── user
-│   │           ├── user.component.html
-│   │           └── user.component.ts
+│   │       ├── transference
+│   │       │   ├── transference.component.html
+│   │       │   └── transference.component.ts
+│   │       └── safebox
+│   │           ├── safebox.component.html
+│   │           └── safebox.component.ts
 │   ├── assets
 │   │   ├── css
 │   │   ├── demo
@@ -161,7 +167,9 @@ black-dashboard-angular
 │   │   ├── img
 │   │   └── scss
 │   │       ├── black-dashboard
-│   │       └── black-dashboard.scss
+│   │
+│   │── services
+│   │   └── token.service.ts
 │   ├── browserslist
 │   ├── environments
 │   ├── favicon.ico
@@ -174,7 +182,12 @@ black-dashboard-angular
 │   ├── tsconfig.app.json
 │   ├── tsconfig.spec.json
 │   └── tslint.json
+├── .editorconfig
+├── .eslintrc.js
+├── .gitignore
+├── .prettierrc.js
 ├── tsconfig.json
+├── yarn.lock
 └── tslint.json
 ```
 `
